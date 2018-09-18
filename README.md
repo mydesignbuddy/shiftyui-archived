@@ -1,2 +1,3 @@
-# shiftyui
+# ShiftyUI
+
 Modern UI Framework
