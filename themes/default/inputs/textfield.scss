@@ -1,0 +1,44 @@
+.shft-textfield {
+    display: flex;
+    align-items: center;
+
+    label {
+        font-family: $default-font-family;
+        font-size: $default-font-size;
+        margin-right: 0.25rem;
+    }
+
+    .shft-input {
+        input {
+            font-family: $default-font-family;
+            font-size: $input-font-size;
+            padding: $input-padding;
+            width: calc(100% - 0.95rem);
+
+            &:disabled {
+                color: #bbb;
+            }
+        }
+    }
+
+    &.label-top {
+        flex-direction: column;
+        align-items: flex-start;
+
+        label {
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    &.fill-width {
+        .shft-input {
+            flex-grow: 1;
+        }
+
+        &.label-top {
+            .shft-input {
+                width: 100%;
+            }
+        }
+    }
+}

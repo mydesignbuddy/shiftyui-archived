@@ -1,0 +1,42 @@
+{
+  "name": "shiftyui",
+  "version": "0.0.1",
+  "description": "A Modern UI Framework. Your UI, your style!",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "watch": "yarn run watch:themes",
+    "watch:themes": "yarn run watch:themes:default && yarn run watch:themes:cocoa && yarn run watch:themes:cocoatouch && yarn run watch:themes:fluent && yarn run watch:themes:material",
+    "watch:themes:default": "node-sass -w themes/default/index.scss dist/themes/default.css",
+    "watch:themes:cocoa": "node-sass -w themes/cocoa/index.scss dist/themes/cocoa.css",
+    "watch:themes:cocoatouch": "node-sass -w themes/cocoatouch/index.scss dist/themes/cocoatouch.css",
+    "watch:themes:fluent": "node-sass -w themes/fluent/index.scss dist/themes/fluent.css",
+    "watch:themes:material": "node-sass -w themes/material/index.scss dist/themes/material.css",
+    "build": "yarn run build:themes",
+    "build:themes": "yarn run build:themes:default && yarn run build:themes:cocoa && yarn run build:themes:cocoatouch && yarn run build:themes:fluent && yarn run build:themes:material",
+    "build:themes:default": "node-sass themes/default/index.scss dist/themes/default.css",
+    "build:themes:cocoa": "node-sass themes/cocoa/index.scss dist/themes/cocoa.css",
+    "build:themes:cocoatouch": "node-sass themes/cocoatouch/index.scss dist/themes/cocoatouch.css",
+    "build:themes:fluent": "node-sass themes/fluent/index.scss dist/themes/fluent.css",
+    "build:themes:material": "node-sass themes/material/index.scss dist/themes/material.css",
+    "start:react": "cd lib/react && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mydesignbuddy/shiftyui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mydesignbuddy/shiftyui/issues"
+  },
+  "homepage": "https://github.com/mydesignbuddy/shiftyui#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "babel-preset-flow": "^6.23.0"
+  }
+}

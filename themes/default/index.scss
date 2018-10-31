@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+}
+
+$default-font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$default-font-size: 1rem;
+$input-font-size: 0.8rem;
+
+$input-padding: 0.35rem;
+
+// inputs
+@import "inputs/textfield.scss";

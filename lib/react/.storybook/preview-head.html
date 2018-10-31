@@ -1,0 +1,18 @@
+<div class="themeSwitcherPanel">
+  <select id="themeSelector" onchange="switchTheme(this.value)">
+    <option value="default">Default</option>
+    <option value="cocoa">Cocoa</option>
+  </select>
+</div>
+<style>
+  .themeSwitcherPanel {
+    position: relative;
+    padding: 1em;
+  }
+</style>
+<script>
+  var switchTheme = function (themeName) {
+    document.getElementById('theme').setAttribute('href', "/" + themeName + ".css");
+  }
+</script>
+<link id="theme" rel="stylesheet" href="/default.css" />
